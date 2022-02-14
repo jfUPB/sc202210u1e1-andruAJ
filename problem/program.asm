@@ -10,22 +10,21 @@ M=D
 
 (TECLADO)
 
-@KBD 
-D=M 
-@70
-D=D-A
+@KBD                   
+D=M                   //D=M 
+@70                   //A=70
+D=D-A                 //D=D-A
 @FILL
-D;JEQ
-//hasta arriba funciona perfectamente
-@KBD
-D=M
-@67
-D=D-A
+D;JEQ                 //if (D=0) {FILL;}
+@KBD                  
+D=M                   //D=M
+@67                   //A=67
+D=D-A                 //D=D-A
 @CLEAN
-D;JEQ
+D;JEQ                //if (D=0) {CLEAN;}
 //Mantiene el ciclo en caso de que no se hunda nada
-@TECLADO
-0;JMP
+@TECLADO             
+0;JMP               //Esta parte sería el condicional del ciclo while que encerraía a la función
 
 (FILL)
 @1
