@@ -15,7 +15,7 @@ D=M
 @70
 D=D-A
 @FILL
-D;JGT
+D;JEQ
 @CLEAN
 D;JEQ
 //Mantiene el ciclo en caso de que no se hunda nada
