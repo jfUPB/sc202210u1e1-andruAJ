@@ -16,6 +16,11 @@ D=M
 D=D-A
 @FILL
 D;JEQ
+//hasta arriba funciona perfectamente
+@KBD
+D=M
+@67
+D=D-A
 @CLEAN
 D;JEQ
 //Mantiene el ciclo en caso de que no se hunda nada
