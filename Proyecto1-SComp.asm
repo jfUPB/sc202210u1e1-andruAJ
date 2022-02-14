@@ -10,8 +10,10 @@ M=D
 
 (TECLADO)
 
-@KBD //Tengo que cambiar esto para que solo lea el código ascii(?)
-D=M-1 //Llena toda la pantalla sin que se limpie automaticamente
+@KBD 
+D=M 
+@70
+D=D-A
 @FILL
 D;JGT
 @CLEAN
